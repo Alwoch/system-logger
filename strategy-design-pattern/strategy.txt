@@ -1,0 +1,28 @@
+we leverage abstraction, composition and concretion
+-we create an abstract class
+
+The strategy design pattern
+-The strategy pattern defines a family of algorithms, encapsulates each one,and makes them interchangeable
+-Strategy lets the algorithm vary independently from clients and use it
+
+Problems it solves
+    subclass or child class inheriting code it does not need to use
+    code duplication(non re-usable code)
+    problems caused by multiple inheritence and or multiple implementation
+
+Goals
+1. define familt of algorithms(strategy/policy)
+2.Encapsulate them
+3. ensure theyre interchangeable
+4. make the algorithm vary independently from clients that use it
+
+steps
+1. identify the aspects of the context class that vary (accross subtypes and /      objects)
+2. separate the aspects of the class that vary from those that dont.
+3.  Encapsulate what varies / what is separate
+4. Program to an interface (Abstraction) not implementation.
+5. in the context class (composition) create a variable of type as the supertype of the strategy. This variable could be possibly be protected.
+6. in the context class, create a setter method for the variable created
+7. in the context class, create a method to be used for executing the abstract method in the strategy
+8. Test for whether the strategy pattern is implemented successfully
+
